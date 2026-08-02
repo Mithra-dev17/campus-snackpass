@@ -1,0 +1,214 @@
+.menu {
+  padding: 40px;
+  text-align: center;
+}
+
+.food-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.food-card {
+
+  width: 240px;
+
+  padding: 30px;
+
+  background: white;
+
+  border-radius: 25px;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.08);
+
+  transition: 0.3s;
+
+}
+
+
+.food-card:hover {
+
+  transform: translateY(-10px);
+
+}
+
+
+.food-card button {
+
+  margin-top: 15px;
+
+  padding: 12px 25px;
+
+  border-radius: 25px;
+
+  background: #ff7a00;
+
+  color:white;
+
+  border:none;
+
+}
+
+.food-image {
+  width: 180px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+
+  .food-container{
+
+    flex-direction:column;
+
+    align-items:center;
+
+  }
+
+
+  .food-card{
+
+    width:90%;
+
+  }
+
+  /* Search & Category Section */
+
+.menu-controls{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    margin:40px 0;
+
+}
+
+
+.menu-controls input{
+
+    width:350px;
+
+    max-width:90%;
+
+    padding:14px 20px;
+
+    border:2px solid #ff7a00;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:0.3s;
+
+}
+
+
+.menu-controls input:focus{
+
+    box-shadow:0 0 10px rgba(255,122,0,0.3);
+
+}
+
+
+.categories{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-top:25px;
+
+}
+
+
+.categories button{
+
+    padding:10px 24px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#ff7a00;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+.categories button:hover{
+
+    background:#e66d00;
+
+    transform:translateY(-3px);
+
+}
+
+
+.categories button:active{
+
+    transform:scale(0.95);
+
+}
+
+.active-category{
+
+    background:#222 !important;
+
+    color:white;
+
+    transform:scale(1.05);
+
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);
+
+}
+
+/* ---------- Responsive Menu ---------- */
+
+@media (max-width:768px){
+
+  .food-container{
+
+    justify-content:center;
+
+    gap:20px;
+
+  }
+
+  .food-card{
+
+    width:90%;
+
+    max-width:320px;
+
+  }
+
+  .menu-controls input{
+
+    width:90%;
+
+  }
+
+}
+
+
+
