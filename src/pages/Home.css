@@ -1,5 +1,13 @@
 .home {
-  padding:40px 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+@media (max-width:768px){
+    .home{
+        padding:20px;
+    }
 }
 
 
@@ -167,11 +175,8 @@
 }
 
 .features{
-
-    padding:80px 10%;
-
+    padding:80px 0;
     text-align:center;
-
 }
 
 .feature-grid{
@@ -207,15 +212,28 @@
 }
 
 .stats{
-
     display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:25px;
+    padding:60px 0;
+}
 
-    padding:60px 10%;
+@media (max-width:768px){
+  .stats{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    padding:30px 0;
+    gap:20px;
+  }
 
+  .stat-card{
+    width:100%;
+    max-width:320px;
+    margin:0 auto;
+  }
 }
 
 .stat-box{
@@ -235,5 +253,39 @@
 .stat-box h2{
 
     font-size:36px;
+
+}
+
+@media (max-width:768px){
+
+  .hero{
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+    gap: 30px;
+  }
+
+  .hero-content{
+    max-width: 100%;
+  }
+
+  .hero-content h1{
+    font-size: 42px;
+  }
+
+  .hero-content p{
+    font-size: 18px;
+  }
+
+  .hero-buttons{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-image img{
+    width: 260px;
+    max-width: 90%;
+    margin-top: 20px;
+  }
 
 }
