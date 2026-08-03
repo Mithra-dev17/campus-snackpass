@@ -213,6 +213,10 @@ This project helped me gain practical experience with:
 
 ---
 
+## Documentation
+
+- [Prompt Report (DOCX)](documentation/ACE_Campus_SnackPass_Prompt_Report_v2.docx)
+
 ## 👩‍💻 Author
 
 **Mithra Senthilkumaran**
