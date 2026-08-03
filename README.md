@@ -178,7 +178,7 @@ npm run lint
 
 ### Order Success
 
-![Order Success](screenshots/order-success.png)
+![Order Success](screenshots/ordersuccess.png)
 
 > 
 
